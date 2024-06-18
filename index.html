@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+    
+</head>
+<body>
+  <header>
+    <div class="body-page">
+    <nav id="navbar">
+        <header>  Ultimate DSA Guide </header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_you_should_already_know">What you should already know </a></li>
+          <li>
+            <a class="nav-link" href="#Common_Data_Structures">Common Data Structures</a> </li>
+          <li><a class="nav-link" href="#Basic_Data_Structures">Basic Data Structures</a></li>
+          <li><a class="nav-link" href="#Sample_Codes">Sample Codes </a></li>
+        </ul>
+      </nav>
+  </header>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+           <p>Today’s world is highly reliable on data and their appropriate management through widely used apps and software. The backbone for appropriate management of data is Data Structure and Algorithms (for convenience here we will use the term DSA). It is a dream for many to achieve expertise in handling and creating these apps and software. With this target in mind, they set out on the journey of learning DSA. The very first step in the journey is the creation of a complete roadmap to learn data structure and algorithms. </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article >
+          <p>Data Structures and Algorithms (DSA) are foundational concepts in computer science that enable efficient data manipulation and problem-solving. Data structures are ways to store and organize data, while algorithms are step-by-step procedures for performing tasks.</p>
+          
+          <p>Understanding DSA is crucial for writing efficient code, optimizing performance, and solving complex problems. It is a key skill for technical interviews and is widely used in various domains, including software development, artificial intelligence, and data science.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Common_Data_Structures">
+        <header>Common Data Structures</header>
+        <article >
+        <p>
+          Here are some common data structures you will encounter:</p>
+      <ul>
+        <li>Arrays: A collection of elements identified by index or key.</li>
+        <li>Linked Lists: A linear collection of elements, where each element points to the next.</li>
+        <li>Stacks: A collection that follows the Last In First Out (LIFO) principle.</li>
+        <li>Queues: A collection that follows the First In First Out (FIFO) principle.</li>
+        <li>Trees: A hierarchical structure with nodes representing data elements.</li>
+
+        <p>Example Code: Array Initialization in Python</p>
+
+        <code># Initialize an array with some elements
+arr = [1, 2, 3, 4, 5]
+print("Array:", arr)</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basic_Data_Structures">
+        <header>Basic Data Structures</header>
+        <article >
+          <p>Arrays and Linked Lists</p>
+          <p>Arrays:</p>
+          <p>Arrays are a fundamental data structure where elements are stored in contiguous memory locations. They provide fast access to elements using an index.</p>
+
+          <p> Linked Lists </p>
+          <p> Linked lists are collections of nodes where each node contains data and a reference to the next node in the sequence. They allow dynamic memory allocation and efficient insertion/deletion operations. </p>
+
+          <code>class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
+
+# Create a linked list and append some elements
+ll = LinkedList()
+ll.append(1)
+ll.append(2)
+ll.append(3)
+</code>
+
+<br><br>
+          
+        </article>
+      </section>
+
+      <section class="main-section" id="Sample_Codes">
+        <header>Sample Codes</header>
+        <article >
+          <p>For Stacks and Linked List </p>
+           <code>
+             stack = []
+
+# Push elements onto the stack
+stack.append(1)
+stack.append(2)
+stack.append(3)
+
+# Pop an element from the stack
+print("Popped element:", stack.pop())
+
+          </code>
+
+          <p>For Trees and Graphs </p>
+          <code>class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.val = key
+
+# In-order traversal
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.val, end=" ")
+        inorder(root.right)
+
+# Create a binary tree and perform in-order traversal
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+inorder(root)
+</code>
+
+          <p>For Time Complexity Analysis </p>
+          <code>def linear_search(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i
+    return -1
+
+arr = [1, 2, 3, 4, 5]
+x = 3
+print("Element found at index:", linear_search(arr, x))
+</code>
+        </article>
+      </section>
+      
+    </main>
+  </div>
+</body>
+</html>

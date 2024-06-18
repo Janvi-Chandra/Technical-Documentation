@@ -1,0 +1,116 @@
+body
+{
+  font-family:'Poppins',sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+}
+
+nav
+{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navbar
+{
+ padding:10px px;
+  border-right: solid 2.5px #333;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+
+nav ul
+{
+  padding:0;
+  overflow-y: 0;
+  overflow-x: hidden;
+  height: 90%;
+  list-style-type: none;
+}
+
+nav header
+{
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+header
+{
+  font-weight: 600;
+}
+
+main
+{
+  position: absolute;
+  margin-left: 320px;
+  padding: 2rem 1rem;
+}
+
+#navbar ul li a
+{
+  padding: 8rem 1rem 0.8rem 2;
+  display: block;
+  text-align: center;
+}
+
+nav header
+{
+  margin-top: 10px;
+}
+
+nav a
+{
+  text-decoration: none;
+  color: #515251;
+}
+
+li a .nav-links
+{
+  border: 1px black solid;
+}
+
+#navbar ul li a {
+  padding: 60px 10px;
+  display: block;
+  text-align: center;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #515251;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#navbar ul li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+
+  #navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 95%;
+    max-height: 400px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    padding: 2rem 1rem;
+    margin-top: 410px;
+  }
+
+}
